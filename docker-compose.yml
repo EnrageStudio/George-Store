@@ -1,0 +1,26 @@
+
+version: "3.3"
+    
+services:
+  wordpress:
+    image: wordpress:latest
+    container_name: george_store
+    expose:
+      - 80
+      #- 443
+    volumes:
+      - ./src/themes:/var/www/html/wp-content/themes
+      - ./src/plugins:/var/www/html/wp-content/plugins
+      - ./src/uploads:/var/www/html/wp-content/uploads
+    restart: always
+    environment:
+      VIRTUAL_HOST: george-store.com
+      WORDPRESS_DB_HOST: enrage.mysql.database.azure.com
+      WORDPRESS_DB_USER: Lichkiller@enrage
+      WORDPRESS_DB_PASSWORD: AlterEgo%85
+      WORDPRESS_DB_NAME: georgestore_db
+
+networks:
+  default:
+    external:
+      name: nginx-proxy

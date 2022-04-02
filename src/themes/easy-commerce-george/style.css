@@ -1,0 +1,56 @@
+/*
+Theme Name: George Child Theme
+Template: easy-commerce
+Author: Enrage Studio
+Version: 1.1.1612579676
+Updated: 2021-02-06 02:47:56
+
+*/
+/*Header*/
+
+.container{
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+body{
+    background-color: white !important;
+}
+#content{
+    padding: 0 !important;
+}
+#qlwapp{
+    left: 50%;
+}
+#btn-scrollup{
+    display: none !important;
+}
+#tophead {
+    background: black;
+}
+#cart-section{
+    display: none !important;
+}
+#right-tophead{
+    display: none;
+}
+#site-navigation{
+    background: black;
+}
+.woocommerce a.button{
+    background: #D50023;
+}
+.sidebar .widget-title::after{
+    background: #D50023;
+}
+#colophon{
+    background: black;
+}
+.site-info{
+    font-size: 14px !important;
+    text-align: center !important;
+    float: none !important;
+}
+.site-info p a{
+    color: #AE1F23 !important;
+}
